@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  gsaw.carrier:
+    image: ${DOCKER_REGISTRY-}gsawcarrier
+    build:
+      context: .
+      dockerfile: GSAW.Carrier/Dockerfile
